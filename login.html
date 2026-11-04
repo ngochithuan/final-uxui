@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-<div class="w-[1280px] relative bg-slate-50 inline-flex flex-col justify-start items-start">
-    <div class="self-stretch min-h-[1024px] px-4 py-44 inline-flex justify-center items-center">
+<div class="relative bg-slate-50 justify-start items-start w-full min-w-[1280px] min-h-screen flex flex-col">
+    <div class="self-stretch min-h-[1024px] px-4 py-44 inline-flex justify-center items-center flex-1">
         <div
-            class="flex-1 max-w-96 p-10 bg-white rounded-3xl shadow-[0px_8px_24px_0px_rgba(0,0,0,0.05)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-start items-start gap-8">
+            class="flex-1 max-w-[428px] p-10 bg-white rounded-3xl shadow-[0px_8px_24px_0px_rgba(0,0,0,0.05)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-start items-start gap-8">
             <div class="self-stretch flex flex-col justify-start items-center gap-0.5">
                 <div
-                    class="w-14 py-3 bg-cyan-600 rounded-2xl shadow-[0px_1px_2px_0px_rgba(0,151,178,0.30)] inline-flex justify-center items-center">
+                    class="w-14 py-3 bg-[#0097B2] rounded-2xl shadow-[0px_1px_2px_0px_rgba(0,151,178,0.30)] inline-flex justify-center items-center">
                     <div class="size- inline-flex flex-col justify-start items-center">
                         <div
                             class="text-center justify-center text-white text-2xl font-bold font-['Inter'] leading-8 tracking-wider">
@@ -23,12 +26,12 @@
                     </div>
                 </div>
                 <div class="self-stretch pt-2.5 flex flex-col justify-start items-center">
-                    <div class="text-center justify-center text-stone-900 text-2xl font-bold font-['Inter'] leading-8">
+                    <div class="text-center justify-center text-[#1F1F1F] text-2xl font-bold font-['Inter'] leading-8 tracking-[-0.5px]">
                         Bevora</div>
                 </div>
                 <div class="self-stretch flex flex-col justify-start items-center">
                     <div
-                        class="text-center justify-center text-cyan-600 text-xs font-semibold font-['Inter'] uppercase leading-4 tracking-wide">
+                        class="text-center justify-center text-[#0097B2] font-semibold font-['Inter'] uppercase leading-4 tracking-wide text-[12.5px]">
                         DIGITAL WALLET</div>
                 </div>
             </div>
@@ -36,7 +39,7 @@
                 <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
                     <div class="self-stretch flex flex-col justify-start items-start">
                         <div
-                            class="self-stretch justify-center text-stone-900 text-sm font-medium font-['Inter'] leading-5">
+                            class="self-stretch justify-center text-[#1F1F1F] text-sm font-medium font-['Inter'] leading-5">
                             Số điện thoại</div>
                     </div>
                     <div class="self-stretch relative flex flex-col justify-start items-start">
@@ -48,23 +51,17 @@
                                     09x xxx xxxx</div>
                             </div>
                         </div>
-                        <div class="h-12 pl-3.5 left-0 top-0 absolute inline-flex justify-start items-center">
-                            <div class="size-5 relative overflow-hidden">
-                                <div
-                                    class="size-3.5 left-[2.50px] top-[2.50px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-gray-600">
-                                </div>
-                            </div>
-                        </div>
+                        <svg class="left-0 top-0 absolute shrink-0" style="overflow:visible" width="34" height="48" viewBox="0 0 34 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 18.1667C16.5 17.2462 17.2462 16.5 18.1667 16.5H20.9C21.2585 16.5003 21.5767 16.7298 21.69 17.07L22.9383 20.8142C23.0691 21.2075 22.8908 21.6372 22.52 21.8225L20.6392 22.7642C21.5611 24.8046 23.1954 26.4389 25.2358 27.3608L26.1775 25.48C26.3628 25.1092 26.7925 24.9309 27.1858 25.0617L30.93 26.31C31.2705 26.4234 31.5001 26.742 31.5 27.1008V29.8333C31.5 30.7538 30.7538 31.5 29.8333 31.5H29C22.0967 31.5 16.5 25.9033 16.5 19V18.1667V18.1667" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#525866"/></svg>
                     </div>
                 </div>
                 <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
                     <div class="self-stretch inline-flex justify-between items-center">
                         <div class="size- inline-flex flex-col justify-start items-start">
-                            <div class="justify-center text-stone-900 text-sm font-medium font-['Inter'] leading-5">Mật
+                            <div class="justify-center text-[#1F1F1F] text-sm font-medium font-['Inter'] leading-5">Mật
                                 khẩu</div>
                         </div>
                         <div class="size- inline-flex flex-col justify-start items-start">
-                            <div class="justify-center text-cyan-600 text-xs font-medium font-['Inter'] leading-4">Quên
+                            <div class="justify-center text-[#0097B2] text-xs font-medium font-['Inter'] leading-4">Quên
                                 mật khẩu?</div>
                         </div>
                     </div>
@@ -77,28 +74,12 @@
                                     Nhập mật khẩu</div>
                             </div>
                         </div>
-                        <div class="h-12 pl-3.5 left-0 top-0 absolute inline-flex justify-start items-center">
-                            <div class="size-5 relative overflow-hidden">
-                                <div
-                                    class="size-3.5 left-[3.33px] top-[2.50px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-gray-600">
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="size- pr-3.5 py-3.5 left-[314px] top-0 absolute inline-flex justify-start items-center">
-                            <div class="size-5 relative overflow-hidden">
-                                <div
-                                    class="size-[5px] left-[7.50px] top-[7.50px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-gray-600">
-                                </div>
-                                <div
-                                    class="w-4 h-3 left-[2.05px] top-[4.17px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-gray-600">
-                                </div>
-                            </div>
-                        </div>
+                        <svg class="left-0 top-0 absolute shrink-0" style="overflow:visible" width="34" height="48" viewBox="0 0 34 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9999 26.5V28.1667M18.9999 31.5H28.9999C29.9204 31.5 30.6666 30.7538 30.6666 29.8333V24.8333C30.6666 23.9129 29.9204 23.1667 28.9999 23.1667H18.9999C18.0794 23.1667 17.3333 23.9129 17.3333 24.8333V29.8333C17.3333 30.7538 18.0794 31.5 18.9999 31.5L23.9999 26.5M32.3333 18.1667V19.8333C32.3333 17.9936 30.8396 16.5 28.9999 16.5C27.1602 16.5 25.6666 17.9936 25.6666 19.8333V23.1667H32.3333V18.1667" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#525866"/></svg>
+                        <svg class="left-[314px] top-0 absolute shrink-0" style="overflow:visible" width="34" height="48" viewBox="0 0 34 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 24C12.5 25.3798 11.3798 26.5 10 26.5C8.62021 26.5 7.5 25.3798 7.5 24C7.5 22.6202 8.62021 21.5 10 21.5C11.3798 21.5 12.5 22.6202 12.5 24V24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#525866"/><path d="M2.04834 24.0001C3.11001 20.6192 6.26917 18.1667 10 18.1667C13.7317 18.1667 16.89 20.6192 17.9517 24.0001C16.89 27.3809 13.7317 29.8334 10 29.8334C6.26917 29.8334 3.11001 27.3809 2.04834 24.0001V24.0001" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#525866"/></svg>
                     </div>
                 </div>
                 <div
-                    class="self-stretch h-12 bg-cyan-600 rounded-xl shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] inline-flex justify-center items-center">
+                    class="self-stretch h-12 bg-[#0097B2] rounded-xl shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] inline-flex justify-center items-center">
                     <div class="size- inline-flex flex-col justify-start items-center">
                         <div
                             class="text-center justify-center text-white text-base font-semibold font-['Inter'] leading-6">
@@ -107,22 +88,15 @@
                 </div>
                 <div class="self-stretch pt-2 flex flex-col justify-start items-center">
                     <div class="text-center justify-center"><span
-                            class="text-gray-600 text-sm font-normal font-['Inter'] leading-5">Chưa có tài khoản?
-                        </span><span class="text-cyan-600 text-sm font-semibold font-['Inter'] leading-5">Đăng ký
+                            class="text-[#525866] text-sm font-normal font-['Inter'] leading-5">Chưa có tài khoản?
+                        </span><span class="text-[#0097B2] text-sm font-semibold font-['Inter'] leading-5">Đăng ký
                             ngay</span></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="size- left-[1218px] top-[20px] absolute flex flex-col justify-start items-start">
-        <div
-            class="size- p-2.5 bg-white rounded-full shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex justify-start items-start">
-            <div class="size-5 relative overflow-hidden">
-                <div
-                    class="size-3.5 left-[2.50px] top-[3.04px] absolute outline outline-[1.67px] outline-offset-[-0.83px] outline-gray-600">
-                </div>
-            </div>
-        </div>
+    <div class="size- right-[22px] top-[20px] absolute flex flex-col justify-start items-start">
+        <div class="shrink-0" style="width:40px;height:40px"><svg style="overflow:visible" width="42" height="42" viewBox="2 1 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_3378_1437)"><rect x="2" y="1" width="42" height="42" rx="21" fill="white" shape-rendering="crispEdges"/><rect x="2.5" y="1.5" width="41" height="41" rx="20.5" stroke="#E5E7EB" shape-rendering="crispEdges"/><path d="M29.9617 24.795C27.1735 25.9162 23.9852 25.2649 21.8601 23.1399C19.7351 21.0148 19.0838 17.8266 20.205 15.0383C16.8736 16.3802 14.9604 19.8949 15.6419 23.4212C16.3235 26.9474 19.4085 29.4961 23 29.5C26.0635 29.5001 28.8194 27.6376 29.9617 24.795V24.795" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" stroke="#525866"/></g><defs><filter id="filter0_d_3378_1437" x="0" y="0" width="46" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation="1"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3378_1437"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3378_1437" result="shape"/></filter></defs></svg></div>
     </div>
 </div>
 </body>
