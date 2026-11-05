@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=block" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script>try{if(localStorage.getItem('sidebar')==='closed')document.documentElement.classList.add('sb-closed')}catch(e){}</script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     <div
         class="self-stretch h-16 px-6 bg-white shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] border-b border-gray-200 inline-flex justify-between items-center">
         <div class="size- flex justify-start items-center gap-3">
-            <svg class="shrink-0 cursor-pointer rounded-md hover:bg-gray-100 transition-colors hover:[&_path[stroke]]:stroke-[#0097B2] [&_path]:transition-colors" style="overflow:visible" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3333 15H26.6666M13.3333 20H26.6666M13.3333 25H26.6666" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" stroke="#525866"/></svg>
+            <button type="button" aria-label="Ẩn/hiện thanh bên" onclick="var h=document.documentElement;h.classList.add('sb-anim');var c=h.classList.toggle('sb-closed');try{localStorage.setItem('sidebar',c?'closed':'open')}catch(e){}" class="block shrink-0 cursor-pointer rounded-md hover:bg-gray-100 transition-colors hover:[&_path[stroke]]:stroke-[#0097B2] [&_path]:transition-colors" style="width:40px;height:40px"><svg style="overflow:visible" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3333 15H26.6666M13.3333 20H26.6666M13.3333 25H26.6666" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" stroke="#525866"/></svg></button>
             <a href="../home.html" aria-label="Về trang chủ" class="size- flex justify-start items-center gap-2.5 cursor-pointer">
                 <div
                     class="size-9 bg-[#0097B2] rounded-md shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] flex justify-center items-center">
@@ -63,7 +64,7 @@
     </div>
     <div class="max-h-[1200px] inline-flex justify-start items-start self-stretch flex-1">
         <div
-            class="w-64 px-3 py-6 bg-white border-r border-gray-200 inline-flex flex-col justify-between items-start self-stretch shrink-0">
+            class="w-64 px-3 py-6 bg-white border-r border-gray-200 inline-flex flex-col justify-between items-start self-stretch shrink-0 shrink-0 [.sb-closed_&]:-ml-64 [.sb-closed_&]:invisible [.sb-anim_&]:transition-[margin-left,visibility] [.sb-anim_&]:duration-300 [.sb-anim_&]:ease-in-out">
             <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
                 <a href="../home.html" class="self-stretch px-3 py-2.5 rounded-md inline-flex justify-start items-center gap-3 cursor-pointer group hover:bg-gray-100 transition-colors">
                     <svg class="relative shrink-0 group-hover:[&_path]:stroke-[#0097B2] [&_path]:transition-colors" style="overflow:visible" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 10L4.16667 8.33333M4.16667 8.33333L10 2.5L15.8333 8.33333M4.16667 8.33333V16.6667C4.16667 17.1269 4.53976 17.5 5 17.5H7.5M15.8333 8.33333L17.5 10M15.8333 8.33333V16.6667C15.8333 17.1269 15.4602 17.5 15 17.5H12.5M7.5 17.5C7.96024 17.5 8.33333 17.1269 8.33333 16.6667V13.3333C8.33333 12.8731 8.70643 12.5 9.16667 12.5H10.8333C11.2936 12.5 11.6667 12.8731 11.6667 13.3333V16.6667C11.6667 17.1269 12.0398 17.5 12.5 17.5M7.5 17.5H12.5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" stroke="#525866"/></svg>
@@ -104,7 +105,7 @@
             </div>
         </div>
         <div class="flex-1 self-stretch px-10 py-8 inline-flex flex-col justify-start items-start relative">
-<div style="margin-top:-16px" class="self-stretch shrink-0 flex justify-center">
+<div style="margin-top:0px" class="self-stretch shrink-0 flex justify-center">
 <div class="w-[540px] max-w-[540px] flex flex-col justify-start items-start gap-8">
 <div class="flex flex-col items-start gap-1"><div class="text-[40px] font-bold leading-[48px] tracking-[-0.5px] text-[#1F1F1F] text-left whitespace-nowrap">Xác nhận thông tin</div></div>
 <div
