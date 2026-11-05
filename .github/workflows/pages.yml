@@ -1,0 +1,50 @@
+name: Deploy UI to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Build site from the HTML pages
+        run: |
+          mkdir _site
+          git ls-files -z '*.html' | xargs -0 cp --parents -t _site
+          # The repo has no index.html, so the site root opens the login page.
+          cat > _site/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html lang="vi">
+          <head>
+              <meta charset="UTF-8">
+              <meta http-equiv="refresh" content="0; url=login.html">
+              <title>Bevora</title>
+          </head>
+          <body><a href="login.html">Mở trang đăng nhập</a></body>
+          </html>
+          EOF
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v5
